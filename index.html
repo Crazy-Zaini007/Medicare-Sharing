@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+
+  <!-- Sidebar -->
+
+  <div class="sidenav_icons_light  sticky-top ">
+    <div class="d-flex justify-content-between order mx-3 py-2">
+      <div class="d-flex flex-row align-items-center">
+
+        <div class="ms-2 ">
+          <i class="far fa-bars " style="position: absolute;"></i>
+          <i class="fal fa-times" style="position: absolute;" ></i>
+        </div>
+      </div>
+      <div class="time ">
+        <img src="./images/logo.png" class="mt-2" style="height: 39px;width:39px;" alt="">
+      </div>
+      <div class="time">
+        <img src="./images/IconDarkmoon.png"class=" moon mt-4" style="height: 18px;width:18px;" alt="">
+        <img src="./images/IconLight sunny.png" class="sun mt-4" style="height: 18px;width:18px;" alt="">
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="sidebar_light">
+
+    <ul class="ml-3" style="list-style: none;">
+      <li class="py-3"><a href="">Home</a></li>
+      <li class="py-3"><div class="dropdown">
+        <button class="dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          General physician
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Clinic</a>
+          <a class="dropdown-item" href="#">Pharmacy</a>
+          <a class="dropdown-item" href="#">Lab</a>
+        </div>
+      </div></li>
+      <li class="py-3"><a href="">Medicare Blockchain</a></li>
+      <li class="py-3"><a href="">Vision</a></li>
+      <li class="py-3"><div class="dropdown">
+        <button class="  dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Health tech
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Industries</a>
+          <a class="dropdown-item" href="#">management system</a>
+          <a class="dropdown-item" href="#">Special model</a>
+        </div>
+      </div></li>
+
+      <li class="py-3"><a href="Contact"></a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar_light navbar-expand-md  sticky-top  py-3" id="nav-header">
+    <div class="navbar-brand "><img class="mr-2 light-logo" src="./images/logo.png" height="59px" alt="">Medical Sharing
+    </div>
+
+
+    <button class="navbar-toggler shadow " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <i class=" fas fa-bars text-center"> </i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+
+      <ul class="navbar-nav ">
+
+        <li class="nav-item mx-2">
+          <a class="nav-link  active p-2 mx-1" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle  p-2" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              General physician
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Clinic</a>
+              <a class="dropdown-item" href="#">Pharmacy</a>
+              <a class="dropdown-item" href="#">Lab</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link  p-2 mx-1" href="#">MedicareBlockchain</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link  p-2 mx-1" href="#">Vision</a>
+        </li>
+        <li class="nav-item mx-2">
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle  p-2 mx-1" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Health tech
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Industries</a>
+              <a class="dropdown-item" href="#">management system</a>
+              <a class="dropdown-item" href="#">Special model</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link  p-2 mx-1" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+        </li>
+
+        <li class="nav-item d-inline mx-1"></li>
+        <img src="./images/IconLight sunny.png" style="height: 18px;  margin-top: 10px;" alt="">
+        <label class="switch nav-link mt-2 ml-auto">
+
+          <input type="checkbox" class="danger">
+          <span class="slider round"></span>
+        </label>
+        <img  src="./images/IconDarkmoon.png" style="height: 18px; margin-top: 10px;" alt="">
+
+
+      </ul>
+
+
+    </div>
+
+  </nav>
+
+  <!-- Carousel -->
+
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active background">
+
+        <div class="carousel-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>New gen <span>Blockhain Healthcare App for</span> <br> Multi Clinic, Multi Lab <br> & Multi Pharmacy
+                </h4>
+                <p>XcainMedicare App EHR Access On-The-Go On Your Mobile Device is the latest Healthcare management
+                  software on Private decentralize and centralize blockchain. <span class="more">View more </span></p>
+                      <p class="see-less">Many years of R &D in addition to traditional EHR , PHR records to be on new edge of trustable and owned by patient can be access to any clinic, hospital, lab, pharmacy. <span class="less">See Less</span></p>
+
+              </div>
+              <div class="col-md-6">
+                <img src="./images/Set-laptop.png" height="100%" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item background">
+
+        <div class="carousel-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>New gen <span>Blockhain Healthcare App for</span> <br> Multi Clinic, Multi Lab <br> & Multi Pharmacy
+                </h4>
+                <p>XcainMedicare App EHR Access On-The-Go On Your Mobile Device is the latest Healthcare management
+                  software on Private decentralize and centralize blockchain. <span class="more">View more </span></p>
+                      <p class="see-less">Many years of R &D in addition to traditional EHR , PHR records to be on new edge of trustable and owned by patient can be access to any clinic, hospital, lab, pharmacy. <span class="less">See Less</span></p>
+
+              </div>
+              <div class="col-md-6">
+                <img src="./images/Set-laptop.png" height="100%" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item background">
+
+        <div class="carousel-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>New gen <span>Blockhain Healthcare App for</span> <br> Multi Clinic, Multi Lab <br> & Multi Pharmacy
+                </h4>
+                <p>XcainMedicare App EHR Access On-The-Go On Your Mobile Device is the latest Healthcare management
+                  software on Private decentralize and centralize blockchain. <span class="more">View more </span></p>
+                      <p class="see-less">Many years of R &D in addition to traditional EHR , PHR records to be on new edge of trustable and owned by patient can be access to any clinic, hospital, lab, pharmacy. <span class="less">See Less</span></p>
+
+              </div>
+              <div class="col-md-6">
+                <img src="./images/Set-laptop.png" height="100%" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item background">
+
+        <div class="carousel-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>New gen <span>Blockhain Healthcare App for</span> <br> Multi Clinic, Multi Lab <br> & Multi Pharmacy
+                </h4>
+                <p>XcainMedicare App EHR Access On-The-Go On Your Mobile Device is the latest Healthcare management
+                  software on Private decentralize and centralize blockchain. <span class="more">View more </span></p>
+                      <p class="see-less">Many years of R &D in addition to traditional EHR , PHR records to be on new edge of trustable and owned by patient can be access to any clinic, hospital, lab, pharmacy. <span class="less">See Less</span></p>
+
+              </div>
+              <div class="col-md-6">
+                <img src="./images/Set-laptop.png" height="100%" width="100%" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <i class="far fa-chevron-left"></i>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <i class="far fa-chevron-right"></i>
+
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+  <!-- BlockChain -->
+
+
+  <div class="blockchain " style="padding-top: 10%;padding-bottom: 10%;">
+
+    <div class="container">
+      <div class="row " >
+        <div class="col-md-7" >
+          <h4>Future Of <span>Xchain Blockchain</span>  In Healthcare</h4>
+        </div>
+
+        <div class="col-md-5">
+          <p>Blockchain can completely change the healthcare system. It can help the healthcare industry overcome the
+            challenges that it is going through. For example, it can help improve universal access, integrity, security,
+            traceability, and interoperability. Blockchain healthcare applications hold the key to improving the current
+            healthcare condition. With blockchain, multiple healthcare systems(HIS) can come together and exchange data
+            with each other,</p>
+
+        </div>
+      </div>
+      <div class="row pt-2" >
+        <div class="col-md-12">
+          <img class="light-image" src="./images/Light__Image__EHR1.png" alt="">
+          <img class="dark-image" src="./images/Dark__Image__EHR1.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Medicare -->
+
+
+
+  <div class="container-fluid medicare ">
+    <div class="row p-0">
+      <div class="col-md-12 p-0">
+        <div class=" border-0 medicare-card">
+          <img class="black_iamge" src="./images/image1.jpeg"  alt="">
+          <img class="light_iamge" src="./images/Img__background2.jpg"  alt="">
+
+          <div class="card-img-overlay " style="padding-top: 10%;">
+           
+            <div class="container">
+              <div class="row" tyle="padding-top: 5%;">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+            <h4 class=""><span>Medicare</span> Sharing</h4>
+            <p class="">We often have heard about co-working spaces where workers from different fields
+              share
+              the same
+              roof and practice their own professionalism. But do you know co-working can be the future of medical
+              system
+              thereby benefitting doctors, dentist along with clinic and hospital owners. <br> <br> It is now termed
+              as
+              “clinic/hospital booking” and how can we make benefit oh PHR from one clinic to other clinic on cloud
+              using
+              blockchain Clinic Co-sharing includes 2 processes A clinician books a healthlancer (consultant) to
+              his/her
+              clinic/hospital.- Healthlancer booking This is a newly added way, where a Doctor (Who can be a
+              Healthlancer
+              or an academicians or a clinician) can book a clinic/hospital to treat his own patients ( can be
+              friends,
+              family, neighbours or referals).- Clinic booking and all Records are shared from client Private key to
+              access the pateint record.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+     </div>
+
+  
+
+
+  </div>
+
+
+
+  <!-- Values -->
+
+  <div class="values container-fluid" style="padding-top: 5%;">
+
+
+    <div class="container px-5">
+      <div class="circle"></div>
+      <div class="row justify-content-center mx-4">
+        <div class="triangle">
+          <img src="./images/OurCoreValues__img1.png" alt="">
+        </div>
+        <h4 class="mt-3">Our Core <span>Values</span></h4>
+
+
+      </div>
+
+      <div class="row  mx-3" style="padding-top: 5%;">
+
+        <div class="col-md-7 ">
+          <h6 class=" text-">C : Create new innovations</h6>
+          <ul style="padding-top: 3%;">
+            <li>Create innovations/new things that are appropriate and effective for the benefit of the health system.
+            </li>
+            <li>We embrace change and we continually look for ways to improvement.</li>
+            <li> We seek best practices and new ways of doing things.</li>
+          </ul>
+
+          <h6 class="mt-4 mb-2">A : Accountability</h6>
+          <ul style="padding-top: 3%;">
+            <li>We are committed to highest quality and safety standards. </li>
+            <li>We have knowledge of what is expected of us.</li>
+          </ul>
+          <h6 class="">R : Respect</h6>
+          <ul style="padding-top: 3%;">
+            <li>We treat others as they want to be treated.</li>
+            <li>We serve as supporters for those in need.</li>
+            <li>We treat people with dignity, politeness, and kindness.</li>
+          </ul>
+
+          <h6 class=" ">E : Excellence</h6>
+          <ul style="padding-top: 3%;">
+            <li>We are committed to providing an exceptional level of service, innovation, ethics and outstanding
+              quality.</li>
+            <li>We endeavor to continue our own studies and actively participate in educating ordinary users in the
+              future.</li>
+
+          </ul>
+        </div>
+
+        <div class="col-md-5 p-0 core">
+          <img src="./images/OurCoreValues__img2.png" alt="">
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 10%">
+
+        <div class="col-md-9 col-sm-12 laptop">
+
+          <img src="./images/ComputerMockup__Back-video.png" alt="" />
+
+
+        </div>
+
+        <div class="col-md-6" style="margin-top: 10%;">
+          <p class="light-logo"><img class="" src="./images/logo.png" style="height: 59px; width: 59px;" alt="">Medical
+            Sharing</p>
+          <h4 class="">Complete Online <br> <span>Medicare Sharing</span></h4>
+          <img src="./images/social/Image-social__android.png" style="width: 132px;
+          height: 74px;" alt="">
+          <img src="./images/social/Image-social__ios.png" style="width: 93px;
+          height: 93px;" alt="">
+          <img src="./images/social/Image-social__web.png" style="width: 86px;
+          height: 86px;" alt="">
+        </div>
+
+      </div>
+
+    </div>
+    <div class="row p-0">
+
+
+      <div class="col-6">
+
+      </div>
+      <div class="col-5 text-right">
+        <a class="btn bg-none mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+          <i class="far fa-arrow-left"></i>
+        </a>
+        <a class="btn mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+          <i class="far fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-12">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row">
+
+                <div class="col-md-3">
+                  <div class="card border-0 card-1 m-1">
+
+                    <div class="card-img-overlay">
+
+                      <h5>Doctor Consulting</h5>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-3 ">
+                  <div class="card border-0 card-2 m-1">
+
+                    <div class="card-img-overlay">
+
+                      <h5>Hospital / Clinic
+                        Appointment</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 ">
+                  <div class="card border-0 card-3 m-1">
+
+                    <div class="card-img-overlay">
+
+                      <h5>Multi Pharmacy
+                        System</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card border-0 card-4 m-1">
+                    <div class="card-img-overlay">
+
+                      <h5>Laboratory Test</h5>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="carousel-item ">
+              <div class="row">
+
+                <div class="col-md-3">
+                  <div class="card border-0 card-1 m-1">
+
+                    <div class="card-img-overlay">
+
+                      <h5>Doctor Consulting</h5>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-3 ">
+                  <div class="card border-0 card-2 m-1">
+
+                    <div class="card-img-overlay">
+
+                      <h5>Hospital / Clinic
+                        Appointment</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 ">
+                  <div class="card border-0 card-3 m-1">
+
+                    <div class="card-img-overlay">
+
+                      <h5>Multi Pharmacy
+                        System</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card border-0 card-4 m-1">
+                    <div class="card-img-overlay">
+
+                      <h5>Laboratory Test</h5>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <div class="" style="padding-top: 7%;">
+    <div class="container-fluid managment">
+      <div class="row justify-content-center py-4">
+
+        <h4>Excellent <span>management system</span></h4>
+
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <img src="./images/ManagementComputerMockup__Back-video.png" style="width:100%" alt="">
+        </div>
+      </div>
+
+
+      <div class="row cards justify-content-center px-5 pb-4">
+
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="card text-center m-1">
+            <div class="card-body">
+              <img class=" " src="./images/Image-management system1.png" alt="">
+              <h6 class="card-title pt-2 ">Saving time</h6>
+              <p>Everyone can access it online. Doctors can read the test results easily and save time deliver via
+                e-service.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center ">
+          <div class="card text-center m-1">
+            <div class="card-body">
+              <img class=" " src="./images/Image-management system2.png" alt="">
+              <h6 class="card-title pt-2 ">Assistance service</h6>
+              <p>We have service MNPL solution that’s mean we can pay first to helping patients with cost problems.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="card text-center m-1">
+            <div class="card-body">
+              <img class=" " src="./images/Image-management system3.png" alt="">
+              <h6 class=" pt-2 ">Data security</h6>
+              <p>The use of Xchainmedicare Blockchain in the system ensures data integrity and reduces internal threats
+                to data.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="card text-center m-1">
+            <div class="card-body">
+              <img class=" " src="./images/Image-management system4.png" alt="">
+              <h6 class="card-title pt-2 ">Online update information</h6>
+              <p>Patients can easily track their health during recovery and it's easy to manage in real time.</p>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Solution -->
+
+
+
+  <div class="container-fluid solution" style="padding-top: 5%;">
+
+    <div class="container py-4">
+      <div class="row pt-4">
+        
+        <div class="col-md-7">
+          <h4>Medical & Fintech
+            Patient Engagement
+            <span> Solution on  Blockchain Technology</span></h4>
+
+        </div>
+        <div class="col-md-5">
+          <p>The use of technology in healthcare industry is nothing new. Different kinds of software are now being used
+            in various hospitals, Clinics and healthcare facilities to make things easier for the patient and doctor.
+            One such step is use of Electronic Health Records (EHR) on Xchainhub Blockchain.</p>
+        </div>
+      </div>
+
+      <div class="row pb-4 justify-content-center">
+        <div class="col-md-12">
+          <img src="./images/doctors.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Team -->
+
+  <div class="team" style="padding-top: 7%;">
+ 
+      <div class="container-fluid " >
+
+        <h4 class="text-center ">OUR <span>TEAM</span></h4>
+        <div class="row justify-content-center " style="padding-left: 4%; padding-right: 4%;">
+
+          <div class="col-md-3 text-center">
+            <div class="card border-0 text-center">
+
+              <div class="card-body ">
+                <img class="card-img-top" src="./images/Dr.Chittiwat Suprasongsin.jpg" alt="">
+
+                <h6 class="text-left">Dr.Chittiwat Suprasongsin</h6>
+                <p>Pediatrics</p>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="card border-0 text-center">
+
+              <div class="card-body">
+                <img class="card-img-top" src="./images/Dusit Madaan.jpg" alt="">
+
+                <h6 class="">Dusit Madaan</h6>
+                <p>Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="card border-0 text-center">
+
+              <div class="card-body">
+                <img class="card-img-top" src="./images/Chanin Torut.jpg" alt="">
+
+                <h6 class="">Chanin Torut</h6>
+                <p>Chief technical officers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="card border-0 text-center">
+
+              <div class="card-body">
+                <img class="card-img-top" src="./images/Prasert Pinitsoponpun.jpg" alt="">
+
+                <h6 class="text-left">Prasert Pinitsoponpun</h6>
+                <p>Chief Security Officer</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="card border-0 text-center">
+
+              <div class="card-body">
+                <img class="card-img-top" src="./images/Chanvit Rungsiyangkoon.jpg" alt="">
+
+                <h6 class="text-left">Chanvit Rungsiyangkoon</h6>
+                <p>Pediatrics</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="card border-0 text-center">
+
+              <div class="card-body">
+                <img class="card-img-top" src="./images/Ahmed Laghari.jpg" alt="">
+
+                <h6 class="pt-3">Ahmed Laghari</h6>
+                <p>Blockchain Dev</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="card border-0 text-center">
+
+              <div class="card-body">
+                <img class="card-img-top" src="./images/Parveen Kumar Konathala.jpg" alt="">
+
+                <h6 class="text-left">Parveen Kumar Konathala</h6>
+                <p>Senior Backend Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="card border-0 text-center">
+
+              <div class="card-body">
+                <img class="card-img-top" src="./images/Muhammad Musadiq.jpg" alt="">
+
+                <h6 class="">Muhammad Musadiq</h6>
+                <p>Senior Project Manager and S/A</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+  </div>
+
+
+
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="container-fluid footer pb-0" style="padding-top: 5%;">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 " style="padding-top: 5%;">
+
+            <p class="light-logo"><img class="" src="./images/logo.png" style="height: 59px; width: 59px;"
+                alt="">Medical
+              Sharing</p>
+
+            <p>Medicare Sharing Co,. Ltd. 77/39 12D <br>
+              Sinn Sathon Tower , Krung Thon Buri Road, <br> Khlong Ton Sai, Khlong San, Bangkok 10600</p>
+            <h6>Have a Questions?</h6>
+            <span>We usually respond before 24 hours.</span>
+
+
+
+
+            <div class="d-flex mt-3 social">
+              <div class="img_cont pr-2">
+                <img src="./images/Icons/Frame (3).png" class=" user_img">
+                <span class="online_icon"></span>
+              </div>
+              <div class="user_info">
+                <span>Emergency Support</span>
+                <p class="number">02 438 1668</p>
+              </div>
+
+            </div>
+
+            <div class="d-flex social">
+              <div class="img_cont pr-2">
+                <img src="./images/Icons/Frame (2).png" class="user_img">
+                <span class="online_icon"></span>
+              </div>
+              <div class="user_info">
+                <span>Mail</span>
+                <p class="mail">support@medicaresharing.net</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-7">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.9366532071144!2d100.49924899999999!3d13.722285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x35cf8fc58f1e029c!2zMTPCsDQzJzIwLjIiTiAxMDDCsDI5JzU3LjMiRQ!5e0!3m2!1sen!2s!4v1669875706311!5m2!1sen!2s"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+
+
+        </div>
+        <div class="row pt-5 justify-content-center privacy p-0">
+          <div class="col-md-7  col-sm-12 text-center  pb-2 ">
+            <p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="16" height="16" fill="url(#pattern0)" />
+                <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_331_688" transform="scale(0.00195312)" />
+                  </pattern>
+                  <image id="image0_331_688" width="512" height="512"
+                    xlink:href="data:image/png;base64,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" />
+                </defs>
+              </svg>
+              Our website uses cookies to improve your experience. Learn more about <a href="">cookie policy</a>
+              <button>Accept</button></p>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="row p-0 ">
+        <div class="col-md-12 rights ">
+          <div class="d-flex justify-content-between py-3 mx-md-5">
+            <div class="">
+
+              <div class=" ">
+                <p>Copyright ©2022. ❤️Medicare Sharing. All Rights Reserved.</p>
+
+              </div>
+            </div>
+            <div class="time ">
+              <p>Social Media: <a href=""><img class="ml-2" src="./images/Icons/Frame 48097037.png" alt=""></a> <a
+                  href=""><img class="ml-2" src="./images/Icons/Frame (4).png" alt=""></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script>
+    $('.fa-bars').show()
+    $('.fa-times').hide()
+    $('.sun').hide()
+    $('.moon').show()
+
+    $('.sidebar_light').hide()
+    $('.see-less').hide()
+    $('.dark-image').hide()
+    $('.light-image').show()
+    $('.light_iamge').show()
+    $('.black_iamge').hide();
+   
+
+
+
+
+    $(".danger").click(function () {
+      $('.navbar_light').toggleClass("navbar_dark");
+      $('.blockchain').toggleClass("blockchain_dark")
+      $('.values').toggleClass('values_dark')
+      $('.managment').toggleClass('managment_dark')
+      $('.solution').toggleClass('solution_dark')
+      $('.team').toggleClass('team_dark')
+      $('.footer').toggleClass('footer_dark')
+      $('.sidenav_icons_light').toggleClass('sidenav_icons_dark')
+      $('.dark-image').toggle();
+      $('.light-image').toggle()
+      $('.black_iamge').toggle()
+      $('.light_iamge').toggle()
+    });
+
+    $(".moon").click(function () {
+      $('.navbar_light').toggleClass("navbar_dark");
+      $('.blockchain').toggleClass("blockchain_dark")
+      $('.values').toggleClass('values_dark')
+      $('.managment').toggleClass('managment_dark')
+      $('.solution').toggleClass('solution_dark')
+      $('.team').toggleClass('team_dark')
+      $('.footer').toggleClass('footer_dark')
+      $('.sidenav_icons_light').toggleClass(' sidenav_icons_dark')
+      $('.dark-image').toggle();
+      $('.light-image').toggle()
+      $('.sun').show()
+    $('.moon').hide()
+    $('.black_iamge').toggle()
+      $('.light_iamge').toggle()
+    $('.sidebar_light').toggleClass('sidebar_dark')
+
+    });
+
+    $(".sun").click(function () {
+      $('.navbar_light').toggleClass("navbar_dark");
+      $('.blockchain').toggleClass("blockchain_dark")
+      $('.values').toggleClass('values_dark')
+      $('.managment').toggleClass('managment_dark')
+      $('.solution').toggleClass('solution_dark')
+      $('.team').toggleClass('team_dark')
+      $('.footer').toggleClass('footer_dark')
+      $('.sidenav_icons_light').toggleClass('sidenav_icons_dark')
+      $('.dark-image').toggle();
+      $('.light-image').toggle()
+      $('.sun').hide()
+    $('.moon').show()
+    $('.black_iamge').toggle()
+      $('.light_iamge').toggle()
+    $('.sidebar_light').toggleClass('sidebar_dark')
+      
+    });
+
+    $(".fa-bars").click(function (){
+      $('.fa-bars').hide()
+    $('.fa-times').show()
+    $('.sidebar_light').show()
+
+
+    })
+
+
+    $(".fa-times").click(function (){
+      $('.fa-bars').show()
+    $('.fa-times').hide()
+    $('.sidebar_light').hide()
+
+
+
+    })
+
+    $(".more").click(function(){
+      $('.see-less').show()
+      $('.more').hide()
+      ()
+    
+    })
+
+    $(".less").click(function(){
+      $('.see-less').hide()
+      $('.more').show()
+    })
+    
+
+
+  </script>
+</body>
+
+</html>
